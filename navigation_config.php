@@ -1,5 +1,4 @@
 <?php
-
 /**
  * create menu_custom_admin
  */
@@ -15,7 +14,6 @@ function Menu_API()
         '20'
     );
 }
-
 
 /**
  * Form data API
@@ -93,16 +91,16 @@ function load_option()
 function edit_config()
 {
     if (isset($_GET['edit']) ){
-        ?>
-            <div class="edit_config">
-                <form action="" method="POST">
-                    <input type="text" name="title" value="<?= $_GET['edit'] ?>" hidden />
-                    <input type="text" name="values" value="<?= get_option($_GET['edit']) ?>" required/>
-                    <input type="submit" class="button action" name="edit" value="Edit">
-                </form>
-            
-            </div>
-        <?php
+?>
+    <div class="edit_config">
+        <form action="" method="POST">
+            <input type="text" name="title" value="<?= $_GET['edit'] ?>" hidden />
+            <input type="text" name="values" value="<?= get_option($_GET['edit']) ?>" required/>
+            <input type="submit" class="button action" name="edit" value="Edit">
+        </form>
+    
+    </div>
+<?php
     }
 }
 
