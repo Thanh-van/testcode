@@ -1,0 +1,10 @@
+.config_option .edit_option{
+    border:none;
+    background: none;
+}
+.config_option p{
+    color: #2271b1;
+}
+.connect_api{
+    margin-top: 20px;
+}
